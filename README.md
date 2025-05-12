@@ -1,6 +1,9 @@
 # Health Insurance Prediction
 
-This is a machine learning project developed as part of the MSc in Bioinformatics at the University of Porto. The goal is to predict whether customers have health insurance based on demographic and socioeconomic data.
+This machine learning project was developed as part of the MSc in Bioinformatics at the University of Porto.  
+Its main objective is to build a predictive model that determines whether a customer has health insurance, using demographic, socioeconomic, and housing-related data.
+
+The project simulates a real-world business scenario and covers the complete data science workflow — from data preprocessing and exploratory analysis to model development, evaluation, and result interpretation. It also aims to compare the behavior and performance of different supervised learning algorithms under varying conditions.
 
 ## Dataset
 
