@@ -1,39 +1,30 @@
 # Health Insurance Prediction
 
-This machine learning project was developed as part of the MSc in Bioinformatics at the University of Porto.  
-Its main objective is to build a predictive model that determines whether a customer has health insurance, using demographic, socioeconomic, and housing-related data.
+Binary classification project predicting health insurance ownership 
+from demographic and socioeconomic data (US customers dataset).
 
-The project simulates a real-world business scenario and covers the complete data science workflow — from data preprocessing and exploratory analysis to model development, evaluation, and result interpretation. It also aims to compare the behavior and performance of different supervised learning algorithms under varying conditions.
+## Results
 
-## Dataset
+| Model | F1 Score (Test) |
+|-------|----------------|
+| Gradient Boosting | **0.733** |
+| SVM | 0.729 |
+| Logistic Regression | 0.713 |
+| Gaussian Naive Bayes | 0.682 |
+| KNN | 0.665 |
 
-The dataset includes customer-level features such as:
-- Age
-- Income
-- Employment status
-- Housing information
-- Vehicle ownership
-
-The data was preprocessed, explored using visualizations, and used to train several classification models.
+Best model: Gradient Boosting (F1 = 0.733), selected for best 
+generalization on unseen data.
 
 ## Methods
+- EDA + feature engineering on demographic/socioeconomic features
+- Preprocessing optimization (scaling, encoding, imbalance handling)
+- Cross-validated comparison of 5 classifiers
+- Model selection based on F1-score (precision/recall balance)
 
-Models tested:
-- Decision Trees
-- Support Vector Machines (Linear and RBF)
-- k-Nearest Neighbors
-- Ensemble Methods (Random Forest, AdaBoost)
+## Stack
+Python · scikit-learn · pandas · matplotlib · seaborn
 
-Techniques used:
-- Data Cleaning
-- Exploratory Data Analysis
-- Cross-Validation
-- F1 Score evaluation
-
-## Technologies
-
-- Python
-- pandas, NumPy
-- scikit-learn
-- matplotlib, seaborn
-- Jupyter Notebook
+## Run locally
+pip install -r requirements.txt
+jupyter notebook notebook.ipynb
