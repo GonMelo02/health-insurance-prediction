@@ -22,6 +22,11 @@ generalization on unseen data.
 - Cross-validated comparison of 5 classifiers
 - Model selection based on F1-score (precision/recall balance)
 
+## Context
+Developed for a Kaggle-based competition (MSc Bioinformatics, FCUP). 
+Models evaluated on a masked test set via Kaggle leaderboard, 
+scored by F1.
+
 ## Stack
 Python · scikit-learn · pandas · matplotlib · seaborn
 
