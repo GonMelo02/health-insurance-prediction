@@ -32,4 +32,4 @@ Python · scikit-learn · pandas · matplotlib · seaborn
 
 ## Run locally
 pip install -r requirements.txt
-jupyter notebook notebook.ipynb
+jupyter notebook "Project - Predicting Health Insurance - Gonçalo_Melo.ipynb"
